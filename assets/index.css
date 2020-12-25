@@ -1,0 +1,112 @@
+html, body { 
+    background-color: #af094b;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    overflow-wrap: break-word!important;
+}
+
+.ts {
+    font-size: 0.7rem;
+}
+
+#main-box { 
+    width: 50%;
+    padding: 0 2.5%;
+    height: 90%;
+    overflow: auto;
+    float: left;
+    color: white;
+}
+
+#chat-box { 
+    float: left;
+    height: 5%;
+    width: 50%;
+    padding: 1.25% 2.5%;
+    background-color: gold;
+}
+
+#drawing-options-box {
+    width: 42%;
+    float: left;
+    height: 7%;
+    padding: 0.75% 1.5%;
+    background-color: royalblue;
+    font-family: monospace;
+}
+
+#drawing-box {
+    width: 45%;
+    float: left;
+    height: 90%;
+    background-color: white;
+}
+
+.pp {
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+
+#msg {
+    width: 85%;
+    height: 40%;
+    margin-top: 1.3%;
+    float: left;
+}
+
+#send-btn {
+    margin-top: 0.8%;
+    background-color: rgb(0, 194, 0);
+    float: right;
+    color: white;
+    padding: 0.5% 3%;
+    border-radius: 3px;
+    transition: 1s;
+} #send-btn:hover {
+    background-color: rgb(34, 230, 34);
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 1%;
+    float: left;
+    border: 3px solid white;
+} .color:hover {
+    cursor: pointer;
+}
+
+.selected {
+    border: 3px solid black;
+}
+
+.cell {
+    width: 1%;
+    height: 1%;
+    float: left;
+} .cell:hover {
+    box-shadow: 1px 1px 3px;
+    cursor: pointer;
+}
+
+.mono {
+    font-family: monospace;
+}
+
+.light-link {
+    color: rgb(187, 255, 249);
+} .light-link:hover {
+    color: white;
+}
+
+.cell-nohover {
+    width: 1%;
+    height: 1%;
+    float: left;
+}
