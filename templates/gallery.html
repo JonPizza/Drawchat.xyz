@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Gallery | DrawChat</title>
+        <link rel="stylesheet" href="/assets/index.css">
+        <script src="/assets/gallery.js" defer="true"></script>
+    </head>
+    <body>
+        <div id="main-box">
+            <ul>
+                {% for d in dates %}
+                    <li>
+                        <a href="javascript:loadImage('{{ d }}')" class="mono light-link">{{ d }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="drawing-box"></div>
+        <div id="chat-box"></div>
+        <div id="drawing-options-box"></div>
+    </body>
+</html>

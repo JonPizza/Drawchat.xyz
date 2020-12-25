@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>DrawChat.XYZ</title>
+        <link rel="stylesheet" href="/assets/index.css">
+        <script src="/assets/chat.js?as=1" defer="true"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js" defer="true"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.2.6/purify.min.js"></script>
+        <script>
+            const CODE = '{{ code }}';
+        </script>
+    </head>
+    <body>
+        <div id="main-box">
+            <br>
+            <!-- js fills with chat msgs -->
+            <noscript>JavaScript MUST be enabled :^)</noscript>
+        </div>
+        <div id="drawing-box"></div>
+        <div id="chat-box">
+            {% csrf_token %}
+            <input type="text" id="msg" placeholder="Enter a Message" autofocus>
+            <div id="send-btn" onclick="send()">Send</div>
+        </div>
+        <div id="drawing-options-box">
+		<div id="cooldown" style="color: white;" hidden>
+			Slow down!
+		</div>
+		<!-- Options created with js -->
+	</div>
+    </body>
+</html>
